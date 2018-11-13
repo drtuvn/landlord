@@ -1,0 +1,48 @@
+﻿@model Landlord.Models.Property
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Property</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PropertyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PropertyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchasedPrice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PurchasedPrice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentValue)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentValue)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mortgage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mortgage)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
